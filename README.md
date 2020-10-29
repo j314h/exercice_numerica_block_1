@@ -26,16 +26,16 @@
 
 - maquette
 
-  - ficher **[maquette-portfolio.pdf](https://github.com/j314h/site_cv/blob/master/maquette/maquette-portfolio.pdf)** premiere maquette du site
-  - ficher **[maquette-portfolio-mode-dark.pdf](https://github.com/j314h/site_cv/blob/master/maquette/maquette-portfolio-mode-dark.pdf)** deuxieme maquette du site
+  - fichier **[maquette-portfolio.pdf](https://github.com/j314h/site_cv/blob/master/maquette/maquette-portfolio.pdf)** premiere maquette du site
+  - fichier **[maquette-portfolio-mode-dark.pdf](https://github.com/j314h/site_cv/blob/master/maquette/maquette-portfolio-mode-dark.pdf)** deuxieme maquette du site
 
 **\*Attention les fichiers.xd ne peuvent pas être lut directement sur github, il faut les télécharger.**
-**La maquette ne corresponds pas au site final, ayant eu des idées pendant la création, j'ai dû changer le style.**
+**La maquette ne correspond pas au site final, ayant eu des idées pendant la création, j'ai dû changer le style.**
 
-**VOUS POUVEZ exécuter le fichier index.html dans le dossier "fichiers_statiques",**
-**par contre il y aura des problèmes de design, car le site comporte de nombreuse animation**
+**VOUS POUVEZ exécuter le fichier index.html dans le dossier "fichiers statiques",**
+**par contre il y aura des problèmes de design, car le site comporte de nombreuses animations**
 **tous les liens fonctionnent vous pourrez changer de page, mais certains textes peuvent chevaucher des images**
-**ou l'inverse**
+**ou l'inverse, si vous voulez visualiser le site fonctionnel [john haimez portfolio](https://johnhaimez.000webhostapp.com/)**
 
     > Build develop
 
