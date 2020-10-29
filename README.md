@@ -37,6 +37,9 @@
 **tous les liens fonctionnent vous pourrez changer de page, mais certains textes peuvent chevaucher des images**
 **ou l'inverse, si vous voulez visualiser le site fonctionnel [john haimez portfolio](https://johnhaimez.000webhostapp.com/)**
 
+**Une fois sur mon portfolio, si vous voulez revenir sur cette page,**
+**il y a un lien disponible (Voir les documents du site) dans le bas de la page du site**
+
     > Build develop
 
 branch => master
