@@ -1,34 +1,75 @@
+<!-- header -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="style.css"
+        type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <title>
+        John haimez
+    </title>
+</head>
+
+<body>
+
+    <!-- header and menu -->
+    <div class="menu_mobile">
+        <div class="barre1"></div>
+        <div class="barre2"></div>
+    </div>
+    <header>
+        <div class="menu-menu-1-container">
+            <ul id="menu-menu-1" class="menu">
+                <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="#aPropos">A propos</a></li>
+                <li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8"><a href="#competence">Compétences</a></li>
+                <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="#portfolio">PortFolio</a></li>
+                <li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="#contact">Contact</a></li>
+            </ul>
+        </div> 
+    </header>
+
+    <main>
+
 <!-- a propos -->
 <section id="aPropos" class="section_a_propos">
     <div class="section_a_propos_box">
         <div class="section_a_propos_box_title">
             <h1 id="title">
-                <?php $profil->the_post(); the_title();?>
+                John haimez
             </h1>
             <p id="sousTitle"></p>
         </div>
         <img class="img_profil"
-            src="<?php echo get_post_meta($post->ID, 'img_profil_adresse', true); ?>"
+            src="../img/picture_profil_2017.png"
             alt="photo_john_haimez">
         <article class="article_a_propos">
             <p class="text_a_propos">
-                <?php
-                    the_content();
-                ?>
+                Après une formation full Stack Javascript de 3 mois dans le développement 
+                web à l’école Oclock en télé présentiel. J’ai continué ma formation chez 
+                SEM Numerica pour une durée de 6 mois. Actuellement en pleine formation 
+                je suis à la recherche d’un stage de 2 mois afin d’obtenir mon titre Professionnel 
+                de développeur web et web mobile.
             </p>
             <p class="text_a_propos text_a_propos_hide">
-                <?php
-                    echo get_post_meta($post->ID, 'texte_cacher_profil', true);
-                ?>
+                Je suis quelqu'un de motivé et curieux faisant toujours preuve d'une grande détermination. 
+                Explorer de nouvelles opportunités, apprendre de nouvelles compétences, rencontrer de nouvelles personnes, 
+                tout cela a toujours été naturel chez moi, aussi bien dans la sphère personnelle que professionnelle. 
+                Étant autodidacte en développement lors de mes temps libres, j'ai décidé de faire une reconversion afin 
+                d'exercer un métier que j'aime et qui me passionne. J'ai commencé ma reconversion professionnelle par 
+                la formation Full-Stack JS chez Oclock d'une durée de 3 mois. Cette formation fut un véritable succès, 
+                j'ai pu approfondir des notions qui on été difficiles à assimiler quand on apprend seul. Suite à cela, 
+                je suis rentré chez SEM Numerica pour découvrir d'autres technologies, faire évoluer mes compétences en 
+                développement et en gestion de projet afin d'obtenir mon titre professionnel "développeur web et web mobile".
             </p>
             <div class="section_a_propos_box_btn_voir_cv">
                 <button class="btn_see_cv">Voir mon CV</button>
             </div>
         </article>
     </div>
-    <?php
-        wp_reset_postdata();
-    ?>
 </section>
 
 <!-- competence -->
@@ -37,44 +78,141 @@
         <div class="competence_box_title">
             <h2 id="title_competence">Compétences</h2>
         </div>
-        <!-- loop competence -->
-        <?php
-            if ($competence->have_posts()):
-            while ($competence->have_posts()):
-            $competence->the_post(); ?>
+
+        <!-- competence 1 -->
         <div class="competence_box_content">
             <div class="competence_box_content_title_img">
                 <div class="box_title_competence">
-                    <h3 id="<?php the_title(); ?>">
-                        <?php the_title(); ?>
+                    <h3 id="langages">
+                        LANGAGES
                     </h3>
                 </div>
                 <div class="box_img_competence">
-                    <?php
-                        //loop for img competence
-                        $fields = get_post_meta($post->ID, '', true);
-                        foreach ($fields as $key=>$value):
-                        if (strstr($key, 'j')): ?>
                     <img class="img_competence"
-                        src="<?php echo get_post_meta($post->ID, $key, true) ?>"
-                        alt="">
-                    <?php
-                        endif;
-                        endforeach;
-                    ?>
+                    src="../img/svg/icon-js.svg"
+                    alt="">
+                    <img class="img_competence"
+                    src="../img/svg/icon-php.svg"
+                    alt="">
+                    <img class="img_competence"
+                    src="../img/svg/git-icon.svg"
+                    alt="">
                 </div>
             </div>
             <article class="competence_box_content_article">
                 <p>
-                    <?php the_content(); ?>
+                    Je maîtrise les langages Javascript et PHP, cela me permet d’apprendre rapidement 
+                    différents Frameworks. Mes compétences me permettent de m’adapter aux technologies 
+                    du web rapidement, je me forme constamment en autodidacte afin de rester compétent.
                 </p>
             </article>
         </div>
-        <?php
-            endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
+
+        <!-- competence 2 -->
+        <div class="competence_box_content">
+            <div class="competence_box_content_title_img">
+                <div class="box_title_competence">
+                    <h3 id="cms">
+                        CMS
+                    </h3>
+                </div>
+                <div class="box_img_competence">
+                    <img class="img_competence"
+                        src="../img/svg/icon-wordpress.svg"
+                        alt="">
+                </div>
+            </div>
+            <article class="competence_box_content_article">
+                <p>
+                    Vous recherchez une personne pour développer un thème ou un plugin sur-mesure ? 
+                    J’ai créé et modifié des thèmes From Scratch avec intégration de plugin; ce qui m’a permis 
+                    d’acquérir des compétences avec WordPress.
+                </p>
+            </article>
+        </div>
+
+        <!-- competence 3 -->
+        <div class="competence_box_content">
+            <div class="competence_box_content_title_img">
+                <div class="box_title_competence">
+                    <h3 id="data">
+                        DATA
+                    </h3>
+                </div>
+                <div class="box_img_competence">
+                    <img class="img_competence"
+                    src="../img/svg/icon-mongodb.svg"
+                    alt="">
+                    <img class="img_competence"
+                    src="../img/svg/icon-postgresql.svg"
+                    alt="">
+                    <img class="img_competence"
+                    src="../img/svg/icon-mysql.svg"
+                    alt="">
+                </div>
+            </div>
+            <article class="competence_box_content_article">
+                <p>
+                    Passionné pas le NoSql avec MongoDB et l’ORM Mongoose, 
+                    je sais également me servir du Sql, cela me permet de travailler 
+                    sur divers environnements
+                </p>
+            </article>
+        </div>
+
+        <!-- competence 4 -->
+        <div class="competence_box_content">
+            <div class="competence_box_content_title_img">
+                <div class="box_title_competence">
+                    <h3 id="back-end">
+                        BACK END
+                    </h3>
+                </div>
+                <div class="box_img_competence">
+                    <img class="img_competence"
+                    src="../img/svg/expressjs-icon.svg"
+                    alt="">
+                    <img class="img_competence"
+                    src="../img/svg/symfony.svg"
+                    alt="">
+                </div>
+            </div>
+            <article class="competence_box_content_article">
+                <p>
+                    Je pratique le Frameworks ExpressJS. La réalisation d’API avec une architecture 
+                    MVC et POO m’a permis d’être à l’aise avec cette technologie. Depuis octobre 2020, 
+                    j’ai commencé mon apprentissage de Symfony.
+                </p>
+            </article>
+        </div>
+
+        <!-- competence 4 -->
+        <div class="competence_box_content">
+            <div class="competence_box_content_title_img">
+                <div class="box_title_competence">
+                    <h3 id="front-end">
+                        FRONT END
+                    </h3>
+                </div>
+                <div class="box_img_competence">
+                    <img class="img_competence"
+                    src="../img/svg/icon-react.svg"
+                    alt="">
+                    <img class="img_competence"
+                    src="../img/svg/angular-seeklogo.com.svg"
+                    alt="">
+                </div>
+            </div>
+            <article class="competence_box_content_article">
+                <p>
+                    ReactJS et Angular sont pour moi de véritables coups de cœur. 
+                    Passionné par ces technologies, j’ai commencé mon apprentissage en autodidacte, 
+                    pour, par la suite, consolider mes acquis et continuer mon apprentissage 
+                    dans les 2 formations que j’ai suivies. Après quelques projets personnels, je suis prêt à développer des applications dynamiques et réactives en ReactJs ou Angular.
+                </p>
+            </article>
+        </div>
+
     </div>
 </section>
 
@@ -84,36 +222,78 @@
         <div class="portfolio_box_title">
             <h2 id="title_portfolio">Portfolio</h2>
         </div>
-        <!-- loop portfolio -->
-        <?php
-            if ($portfolio->have_posts()):
-            while ($portfolio->have_posts()):
-                $portfolio->the_post(); ?>
+
+        <!-- projet 1 -->
         <article
-            id="<?php echo get_post_meta($post->ID, 'title', true); ?>"
+            id="rpg"
             class="box_article_portfolio">
             <div
-                class="box_text_article_portfolio <?php echo get_post_meta($post->ID, 'title', true); ?>">
-                <h3 id="title_article_portfolio"><?php the_title(); ?>
+                class="box_text_article_portfolio rpg">
+                <h3 id="title_article_portfolio">RPG
                 </h3>
                 <p>
-                    <?php the_content(); ?>
+                    Projet de formation chez Oclock, ce petit jeu est un clin d’œil pour mon professeur 
+                    de JavaScript avec lequel j’ai entretenu de très bons rapports.
                 </p>
-                <a href="<?php the_permalink() ?>"><button
+                <a href="#"><button
                         class="btn_detail_portfolio">Details</button></a>
             </div>
             <div class="box_img_article_portfolio">
-                <a href="<?php the_permalink() ?>">
-                    <img src="<?php echo get_post_meta($post->ID, 'john_img_portfolio', true); ?>"
+                <a href="#">
+                    <img src="../img/rpg-oclock.png"
                         alt="">
                 </a>
             </div>
         </article>
-        <?php
-            endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
+
+        <!-- projet 2 -->
+        <article
+            id="PROJET PRO"
+            class="box_article_portfolio">
+            <div
+                class="box_text_article_portfolio projet-pro">
+                <h3 id="title_article_portfolio">PROJET PRO
+                </h3>
+                <p>
+                    Site qui m’a permis de commencer ma reconversion dans le monde du web. 
+                    J’ai créé ce site afin d’obtenir le financement de ma formation chez Oclock, 
+                    mais il m’a également servi pour intégrer la formation chez SEM Numerica.
+                </p>
+                <a href="#"><button
+                        class="btn_detail_portfolio">Details</button></a>
+            </div>
+            <div class="box_img_article_portfolio">
+                <a href="#">
+                    <img src="../img/projet_pro.png"
+                        alt="">
+                </a>
+            </div>
+        </article>
+
+        <!-- projet 3 -->
+        <article
+            id="blog-oclock"
+            class="box_article_portfolio">
+            <div
+                class="box_text_article_portfolio rpg">
+                <h3 id="title_article_portfolio">BLOG-OCLOCK
+                </h3>
+                <p>
+                    Blog-Oclock aurait dû être mon carnet de bord pendant ma formation chez Oclock, 
+                    je l’ai donc créé juste avant le début de celle-ci. Mais une fois en formation, 
+                    les règles de non-divulgation envers mon école, m’ont contraint d’abandonner le projet.
+                </p>
+                <a href="#"><button
+                        class="btn_detail_portfolio">Details</button></a>
+            </div>
+            <div class="box_img_article_portfolio">
+                <a href="#">
+                    <img src="../img/blog-oclock-john-dev.png"
+                        alt="">
+                </a>
+            </div>
+        </article>
+
     </div>
 </section>
 
@@ -126,24 +306,33 @@
                 <h2 id="title_contact">Contact</h2>
             </div>
             <form class="form_contact">
-                <?php echo do_shortcode('[contact-form-7 id="90" title="Formulaire de contact 1"]'); ?>
+                <div>
+                    <input placeholder="Nom, Prénom" type="text">
+                </div>
+                <div>
+                    <input placeholder="Mail" type="text">
+                </div>
+                <textarea placeholder="Votre message"></textarea>
+                <div>
+                    <input class="btn_contact" type="submit" name="Envoyer" value="Envoyer">
+                </div>
             </form>
             <div class="contact_box_lien_utils">
                 <p>Voir mon travail en détail</p>
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/john-haimez-a11230137/" target="_blank">
-                            <img src="/wp-content/uploads/2020/10/iconmonstr-linkedin-3.svg">
+                            <img src="../img/svg/iconmonstr-linkedin-3.svg">
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/j314h" target="_blank">
-                            <img src="/wp-content/uploads/2020/10/iconmonstr-github-3.svg">
+                            <img src="../img/svg/iconmonstr-github-3.svg">
                         </a>
                     </li>
                     <li>
                         <a href="https://codepen.io/j314h" target="_blank">
-                            <img src="/wp-content/uploads/2020/10/icons8-codepen.svg">
+                            <img src="../img/svg/icons8-codepen.svg">
                         </a>
                     </li>
                 </ul>
@@ -153,6 +342,20 @@
     </div>
 </section>
 
-<!-- load footer -->
-<?php
-get_footer();
+</main>
+
+<!-- footer -->
+    <footer>
+        <ul>
+            <li class="copyDate"></li>
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="#">Informations sur la création du site</a></li>
+            <li><a href="https://github.com/j314h/site_cv" target="_blank">Voir les documents du site</a></li>
+        </ul>
+        <!--  archor for menu -->
+        <div id="basFooter">
+        </div>
+    </footer>
+</body>
+
+</html>

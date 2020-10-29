@@ -9,6 +9,8 @@
   - fichier **[single-info.php]()** pour la page présentation du projet **portfolio**
   - fichier **[single-mention.php]()** pour les mentions légales du site
   - fichier **[single-portfolio.php]()** pour toute les présentations des projets personnels
+  - fichier **[header.php]()** pour le header du site
+  - fichier **[footer.php]()** pour le footer du site
 
 - fichiers statiques
 
