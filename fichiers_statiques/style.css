@@ -102,7 +102,7 @@ h2 {
   font-size: 5rem;
   font-family: "font_bold";
   text-transform: uppercase;
-  opacity: 0;
+  opacity: 1;
   transition: all 2s;
 }
 
@@ -235,7 +235,7 @@ header {
   text-align: left;
   line-height: 1.8;
   letter-spacing: 0.8px;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s;
 }
 
@@ -244,7 +244,7 @@ header {
   text-align: left;
   line-height: 1.8;
   letter-spacing: 0.8px;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s;
 }
 
@@ -272,14 +272,14 @@ header {
 #sousTitle {
   font-size: 1.8rem;
   font-family: "font_bold";
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s;
   color: var(--color-sous-text2);
   letter-spacing: 1px;
 }
 
 .section_a_propos_box_btn_voir_cv {
-  opacity: 0;
+  opacity: 1;
   margin-top: 50px;
   transition: all 0.3s;
 }
@@ -329,7 +329,7 @@ header {
   /* background-color: rgba(255, 255, 255, 0.7); */
   border-radius: 40px;
   color: var(--color-blanc);
-  transform: scale(1, 0);
+  transform: scale(1, 1);
   transition: all 0.5s;
 }
 
@@ -579,7 +579,7 @@ footer ul li a:hover {
   padding: 120px 50px;
   width: 100%;
   background-color: var(--color-tertiaire);
-  opacity: 0;
+  opacity: 1;
   transition: all 1s;
   color: var(--color-blanc);
 }
