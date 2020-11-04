@@ -40,10 +40,6 @@
 **Une fois sur mon portfolio, si vous voulez revenir sur cette page,**
 **il y a un lien disponible (Voir les documents du site) dans le bas de la page du site**
 
-    > Build develop
+Build in branch develop Forbidden to work on this branch (master)
 
-branch => master
-
-- branch master => do not push in
-- branch develop => template new branch and merge all branch in
-- all branch => work in and merge in branch develop
+under construction
